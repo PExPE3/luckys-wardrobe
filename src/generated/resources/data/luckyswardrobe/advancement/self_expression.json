@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "hat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "luckyswardrobe:hat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancement.luckysarmory.heavy_iron_armor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "luckyswardrobe:hat"
+    },
+    "title": {
+      "translate": "advancement.luckysarmory.heavy_iron_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "hat"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}
