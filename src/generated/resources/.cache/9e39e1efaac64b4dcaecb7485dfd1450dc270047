@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T18:10:05.9326784	Item Models: luckyswardrobe
+// 1.21.1	2025-05-04T18:50:46.6614009	Item Models: luckyswardrobe
 5fc17056d0ecfe6675920437715bac99d24e5dc4 assets/luckyswardrobe/models/item/butchers_apron.json
 f07eb1bc9fe7ccad90fe808d04c0064348f679f3 assets/luckyswardrobe/models/item/chiton.json
 ece0264d6b9a84a62eae17487498e9811aeb2994 assets/luckyswardrobe/models/item/clerics_apron.json
@@ -10,5 +10,6 @@ d95813d722e9292ee1e62b67ba0f807e39a42f34 assets/luckyswardrobe/models/item/fox_h
 1d8f381e9781726b9e15c773d3f112a4b611ce87 assets/luckyswardrobe/models/item/masons_apron.json
 7d10693b4a83e8782e914fb0c47731cec9534cf9 assets/luckyswardrobe/models/item/scarf.json
 26791f1cf4b4dd571a404e902ed99c9dfa729e82 assets/luckyswardrobe/models/item/snow_fox_hat.json
+a6d76b0b5a650907261494381633688b6054a59d assets/luckyswardrobe/models/item/taiga_hood.json
 c574a391af783ea799e380a1eb5f906b34d77792 assets/luckyswardrobe/models/item/top_hat.json
 0507928a6bc4c2ff1ca133f71a8227a46d11cb93 assets/luckyswardrobe/models/item/wool_vest.json

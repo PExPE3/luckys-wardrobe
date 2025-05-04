@@ -15,29 +15,27 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LuckysWardrobe.MOD_ID);
 
+    // Villager profession cosmetics
     public static final DeferredItem<VillagerProfessionArmorItem> LEATHER_APRON = ITEMS.register("leather_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.LEATHER_COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/leatherworker.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> HARDENED_LEATHER_APRON = ITEMS.register("hardened_leather_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.LEATHER_COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/armorer.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> BUTCHERS_APRON = ITEMS.register("butchers_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.LEATHER_COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/butcher.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> CLERICS_APRON = ITEMS.register("clerics_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.LEATHER_COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/cleric.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> FISHING_APRON = ITEMS.register("fishing_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.LEATHER_COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/fisherman.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> CHITON = ITEMS.register("chiton",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/librarian.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> MASONS_APRON = ITEMS.register("masons_apron",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/mason.png"), new Item.Properties()));
-
     public static final DeferredItem<VillagerProfessionArmorItem> WOOL_VEST = ITEMS.register("wool_vest",
             () -> new VillagerProfessionArmorItem(ModArmorMaterials.COSMETIC, ArmorItem.Type.CHESTPLATE, ResourceLocation.withDefaultNamespace("textures/entity/villager/profession/shepherd.png"), new Item.Properties()));
+
+    // Clothing
+    public static final DeferredItem<DyeableCosmeticArmorItem> TAIGA_HOOD = ITEMS.register("taiga_hood",
+            () -> new DyeableCosmeticArmorItem(ModArmorMaterials.DYEABLE_LEATHER_COSMETIC, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final DeferredItem<DyeableCosmeticArmorItem> HAT = ITEMS.register("hat",
             () -> new DyeableCosmeticArmorItem(ModArmorMaterials.DYEABLE_LEATHER_COSMETIC, ArmorItem.Type.HELMET, new Item.Properties()));

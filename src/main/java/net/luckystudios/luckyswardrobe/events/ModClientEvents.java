@@ -27,6 +27,7 @@ public class ModClientEvents {
     // Copied from ItemColors.class
     @SubscribeEvent(priority = EventPriority.NORMAL)
     public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TAIGA_HOOD);
         renderItemColor(event, DyeColor.WHITE.getTextureDiffuseColor(), true, ModItems.HAT);
         renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TOP_HAT);
         renderItemColor(event, DyeColor.WHITE.getTextureDiffuseColor(), false, ModItems.SCARF);
@@ -68,16 +69,18 @@ public class ModClientEvents {
         ModModelRegistrations.registerCosmeticModel(event, ModItems.CHITON.get(), ProfessionBody.LAYER_LOCATION);
         ModModelRegistrations.registerCosmeticModel(event, ModItems.MASONS_APRON.get(), ProfessionBody.LAYER_LOCATION);
         ModModelRegistrations.registerCosmeticModel(event, ModItems.WOOL_VEST.get(), ProfessionBody.LAYER_LOCATION);
-        ModModelRegistrations.registerHatModel(event, ModItems.HAT.get(), HatModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
-        ModModelRegistrations.registerHatModel(event, ModItems.TOP_HAT.get(), TopHatModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TAIGA_HOOD.get(), HoodModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.HAT.get(), HatModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TOP_HAT.get(), TopHatModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
         ModModelRegistrations.registerModelWithSwing(event, ModItems.FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, true);
         ModModelRegistrations.registerModelWithSwing(event, ModItems.SNOW_FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, false);
-        ModModelRegistrations.registerHatModel(event, ModItems.SCARF.get(), ScarfModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SCARF.get(), ScarfModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
     }
 
     @SubscribeEvent
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ProfessionBody.LAYER_LOCATION, ProfessionBody::createBodyLayer);
+        event.registerLayerDefinition(HoodModel.LAYER_LOCATION, HoodModel::createBodyLayer);
         event.registerLayerDefinition(HatModel.LAYER_LOCATION, HatModel::createBodyLayer);
         event.registerLayerDefinition(TopHatModel.LAYER_LOCATION, TopHatModel::createBodyLayer);
         event.registerLayerDefinition(FoxHatModel.LAYER_LOCATION, FoxHatModel::createBodyLayer);

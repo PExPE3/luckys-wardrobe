@@ -17,11 +17,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HAT.get()))
                     .title(Component.translatable("itemGroup.luckyswardrobe"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.HAT);
-                        output.accept(ModItems.TOP_HAT);
-                        output.accept(ModItems.FOX_HAT);
-                        output.accept(ModItems.SNOW_FOX_HAT);
-                        output.accept(ModItems.SCARF);
+                        // Villager Profession Cosmetics
                         output.accept(ModItems.LEATHER_APRON);
                         output.accept(ModItems.HARDENED_LEATHER_APRON);
                         output.accept(ModItems.BUTCHERS_APRON);
@@ -30,6 +26,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHITON);
                         output.accept(ModItems.MASONS_APRON);
                         output.accept(ModItems.WOOL_VEST);
+
+                        // Clothing
+                        output.accept(ModItems.TAIGA_HOOD);
+
+                        // Unique Cosmetics
+                        output.accept(ModItems.HAT);
+                        output.accept(ModItems.TOP_HAT);
+                        output.accept(ModItems.FOX_HAT);
+                        output.accept(ModItems.SNOW_FOX_HAT);
+                        output.accept(ModItems.SCARF);
                     }).build());
 
     public static void register(IEventBus eventBus) {

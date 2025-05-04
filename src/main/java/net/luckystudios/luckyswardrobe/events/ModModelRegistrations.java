@@ -32,7 +32,7 @@ public class ModModelRegistrations {
         }, item);
     }
 
-    public static void registerHatModel(RegisterClientExtensionsEvent event, Item item, ModelLayerLocation layer, int defaultColor) {
+    public static void registerDyeableCosmeticModel(RegisterClientExtensionsEvent event, Item item, ModelLayerLocation layer, int defaultColor) {
         event.registerItem(new IClientItemExtensions() {
 
             @Override

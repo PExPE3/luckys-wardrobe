@@ -94,6 +94,22 @@ public class ModArmorMaterials {
             )
     );
 
+    public static final Holder<ArmorMaterial> WOOL_CLOTHING = register("wool_clothing",
+            Util.make(new EnumMap<>(DyeableCosmeticArmorItem.Type.class), attribute -> {
+                // Increased protection values by 1 and body by 3
+                attribute.put(ArmorItem.Type.BOOTS, 0);
+                attribute.put(ArmorItem.Type.LEGGINGS, 0);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
+                attribute.put(ArmorItem.Type.HELMET, 0);
+                attribute.put(ArmorItem.Type.BODY, 0);
+            }),
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            9,
+            0.0f,
+            0.0f,
+            () -> Items.WHITE_WOOL
+    );
+
     public static final CauldronInteraction DYED_ARMOR_ITEM = (state, level, pos, player, hand, stack) -> {
         ItemStack result = stack.copy();
         result.set(DataComponents.DYED_COLOR, new DyedItemColor(DyeColor.WHITE.getTextureDiffuseColor(), false));

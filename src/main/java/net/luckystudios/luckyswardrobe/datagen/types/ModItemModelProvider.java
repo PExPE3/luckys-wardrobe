@@ -23,6 +23,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHITON.get());
         basicItem(ModItems.MASONS_APRON.get());
         basicItem(ModItems.WOOL_VEST.get());
+
+        registerDyedItemWithLayer(ModItems.TAIGA_HOOD.get());
+
         registerDyedItemWithLayer(ModItems.HAT.get());
         registerDyedItemWithLayer(ModItems.TOP_HAT.get());
         basicItem(ModItems.FOX_HAT.get());

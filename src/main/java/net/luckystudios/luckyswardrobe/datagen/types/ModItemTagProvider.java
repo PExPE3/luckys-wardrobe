@@ -21,6 +21,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.DYEABLE)
+                .add(ModItems.TAIGA_HOOD.get())
                 .add(ModItems.HAT.get())
                 .add(ModItems.TOP_HAT.get())
                 .add(ModItems.SCARF.get())
