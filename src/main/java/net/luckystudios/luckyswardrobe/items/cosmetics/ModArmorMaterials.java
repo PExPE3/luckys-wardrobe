@@ -1,6 +1,7 @@
 package net.luckystudios.luckyswardrobe.items.cosmetics;
 
 import net.luckystudios.luckyswardrobe.LuckysWardrobe;
+import net.luckystudios.luckyswardrobe.items.cosmetics.custom.CosmeticArmorItem;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
@@ -59,7 +60,7 @@ public class ModArmorMaterials {
     );
 
     public static final Holder<ArmorMaterial> LEATHER_COSMETIC = register("leather_cosmetic",
-            Util.make(new EnumMap<>(DyeableCosmeticArmorItem.Type.class), attribute -> {
+            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
                 // Increased protection values by 1 and body by 3
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
@@ -75,7 +76,7 @@ public class ModArmorMaterials {
     );
 
     public static final Holder<ArmorMaterial> DYEABLE_LEATHER_COSMETIC = register("dyeable_leather_cosmetic",
-            Util.make(new EnumMap<>(DyeableCosmeticArmorItem.Type.class), attribute -> {
+            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
                 // Increased protection values by 1 and body by 3
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
@@ -95,7 +96,7 @@ public class ModArmorMaterials {
     );
 
     public static final Holder<ArmorMaterial> WOOL_CLOTHING = register("wool_clothing",
-            Util.make(new EnumMap<>(DyeableCosmeticArmorItem.Type.class), attribute -> {
+            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
                 // Increased protection values by 1 and body by 3
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
@@ -136,8 +137,8 @@ public class ModArmorMaterials {
         Supplier<Ingredient> ingredient = () -> Ingredient.of(repairIngredient.get());
         List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
-        EnumMap<DyeableCosmeticArmorItem.Type, Integer> typeMap = new EnumMap<>(DyeableCosmeticArmorItem.Type.class);
-        for (DyeableCosmeticArmorItem.Type type : ArmorItem.Type.values()) {
+        EnumMap<CosmeticArmorItem.Type, Integer> typeMap = new EnumMap<>(CosmeticArmorItem.Type.class);
+        for (CosmeticArmorItem.Type type : ArmorItem.Type.values()) {
             typeMap.put(type, typeProtection.get(type));
         }
 

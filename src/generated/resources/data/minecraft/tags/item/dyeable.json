@@ -1,8 +1,17 @@
 {
   "values": [
     "luckyswardrobe:taiga_hood",
+    "luckyswardrobe:taiga_coat",
+    "luckyswardrobe:taiga_pants",
+    "luckyswardrobe:taiga_boots",
+    "luckyswardrobe:snowy_hood",
+    "luckyswardrobe:snowy_hat",
+    "luckyswardrobe:snowy_coat",
+    "luckyswardrobe:snowy_pants",
+    "luckyswardrobe:snowy_boots",
     "luckyswardrobe:hat",
     "luckyswardrobe:top_hat",
+    "luckyswardrobe:explorers_hat",
     "luckyswardrobe:scarf"
   ]
 }

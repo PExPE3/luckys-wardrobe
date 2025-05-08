@@ -25,9 +25,39 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.WOOL_VEST.get());
 
         registerDyedItemWithLayer(ModItems.TAIGA_HOOD.get());
+        registerDyedItemWithLayer(ModItems.TAIGA_COAT.get());
+        registerDyedItemWithLayer(ModItems.TAIGA_PANTS.get());
+        registerDyedItemWithLayer(ModItems.TAIGA_BOOTS.get());
+
+        registerDyedItemWithLayer(ModItems.SNOWY_HOOD.get());
+        registerDyedItemWithLayer(ModItems.SNOWY_HAT.get());
+        registerDyedItemWithLayer(ModItems.SNOWY_COAT.get());
+        registerDyedItemWithLayer(ModItems.SNOWY_PANTS.get());
+        registerDyedItemWithLayer(ModItems.SNOWY_BOOTS.get());
+
+        basicItem(ModItems.SAVANNA_FLORAL_CROWN.get());
+        basicItem(ModItems.SAVANNA_ROBE.get());
+        basicItem(ModItems.SAVANNA_PANTS.get());
+        basicItem(ModItems.SAVANNA_SANDALS.get());
+
+        basicItem(ModItems.SWAMPY_HAT.get());
+        basicItem(ModItems.SWAMPY_ROBE.get());
+        basicItem(ModItems.SWAMPY_PANTS.get());
+        basicItem(ModItems.SWAMPY_SHOES.get());
+
+        basicItem(ModItems.JUNGLE_ROBE.get());
+        basicItem(ModItems.JUNGLE_PANTS.get());
+        basicItem(ModItems.JUNGLE_SANDALS.get());
+
+        basicItem(ModItems.DESERT_HAT.get());
+        basicItem(ModItems.DESERT_ROBE.get());
+        basicItem(ModItems.DESERT_PANTS.get());
+        basicItem(ModItems.DESERT_SANDALS.get());
 
         registerDyedItemWithLayer(ModItems.HAT.get());
         registerDyedItemWithLayer(ModItems.TOP_HAT.get());
+        registerDyedItemWithLayer(ModItems.EXPLORERS_HAT.get());
+        basicItem(ModItems.WITCH_HAT.get());
         basicItem(ModItems.FOX_HAT.get());
         basicItem(ModItems.SNOW_FOX_HAT.get());
         registerDyedItem(ModItems.SCARF.get());

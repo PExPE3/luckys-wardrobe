@@ -9,12 +9,11 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 
-public class HoodModel<T extends Entity> extends HumanoidArmorModel<LivingEntity> {
+public class HoodModel<T extends LivingEntity> extends HumanoidArmorModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "taiga_hat"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "hood_model"), "main");
 	private final ModelPart head;
 
 	public HoodModel(ModelPart root) {
@@ -38,7 +37,8 @@ public class HoodModel<T extends Entity> extends HumanoidArmorModel<LivingEntity
 		.texOffs(0, 34).addBox(-5.0F, -9.0F, -6.0F, 10.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(32, 24).addBox(-5.0F, -6.0F, -5.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F))
 		.texOffs(32, 24).addBox(3.0F, -6.0F, -5.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(0, 40).addBox(-4.5F, -9.0F, -6.5F, 9.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -1.0F, 0.0F));
+		.texOffs(0, 40).addBox(-4.5F, -9.0F, -6.5F, 9.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(0, 44).addBox(-4.5F, -6.0F, -4.75F, 9.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -1.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}

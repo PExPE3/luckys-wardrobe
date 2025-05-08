@@ -28,8 +28,17 @@ public class ModClientEvents {
     @SubscribeEvent(priority = EventPriority.NORMAL)
     public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
         renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TAIGA_HOOD);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TAIGA_COAT);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TAIGA_PANTS);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TAIGA_BOOTS);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.SNOWY_HAT);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.SNOWY_HOOD);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.SNOWY_COAT);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.SNOWY_PANTS);
+        renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.SNOWY_BOOTS);
         renderItemColor(event, DyeColor.WHITE.getTextureDiffuseColor(), true, ModItems.HAT);
         renderItemColor(event, DyedItemColor.LEATHER_COLOR, true, ModItems.TOP_HAT);
+        renderItemColor(event, DyeColor.WHITE.getTextureDiffuseColor(), true, ModItems.EXPLORERS_HAT);
         renderItemColor(event, DyeColor.WHITE.getTextureDiffuseColor(), false, ModItems.SCARF);
     }
 
@@ -69,11 +78,43 @@ public class ModClientEvents {
         ModModelRegistrations.registerCosmeticModel(event, ModItems.CHITON.get(), ProfessionBody.LAYER_LOCATION);
         ModModelRegistrations.registerCosmeticModel(event, ModItems.MASONS_APRON.get(), ProfessionBody.LAYER_LOCATION);
         ModModelRegistrations.registerCosmeticModel(event, ModItems.WOOL_VEST.get(), ProfessionBody.LAYER_LOCATION);
+
         ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TAIGA_HOOD.get(), HoodModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableModelWithSwing(event, ModItems.TAIGA_COAT.get(), BodyModel.LAYER_LOCATION, false, 0, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TAIGA_PANTS.get(), PantsModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TAIGA_BOOTS.get(), ShoesModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SNOWY_HAT.get(), TallHatModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SNOWY_HOOD.get(), HoodModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableModelWithSwing(event, ModItems.SNOWY_COAT.get(), BodyModel.LAYER_LOCATION, false, 0, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SNOWY_PANTS.get(), PantsModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SNOWY_BOOTS.get(), ShoesModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SAVANNA_FLORAL_CROWN.get(), TallHatModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SAVANNA_ROBE.get(), BodyModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SAVANNA_PANTS.get(), PantsModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SAVANNA_SANDALS.get(), ShoesModel.LAYER_LOCATION);
+
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SWAMPY_HAT.get(), HatModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SWAMPY_ROBE.get(), BodyModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SWAMPY_PANTS.get(), PantsModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.SWAMPY_SHOES.get(), ShoesModel.LAYER_LOCATION);
+
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.JUNGLE_ROBE.get(), BodyModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.JUNGLE_PANTS.get(), PantsModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.JUNGLE_SANDALS.get(), ShoesModel.LAYER_LOCATION);
+
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.DESERT_HAT.get(), TallHatModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.DESERT_ROBE.get(), BodyModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.DESERT_PANTS.get(), PantsModel.LAYER_LOCATION);
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.DESERT_SANDALS.get(), ShoesModel.LAYER_LOCATION);
+
         ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.HAT.get(), HatModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
-        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TOP_HAT.get(), TopHatModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
-        ModModelRegistrations.registerModelWithSwing(event, ModItems.FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, true);
-        ModModelRegistrations.registerModelWithSwing(event, ModItems.SNOW_FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, false);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.TOP_HAT.get(), TallHatModel.LAYER_LOCATION, DyedItemColor.LEATHER_COLOR);
+        ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.EXPLORERS_HAT.get(), HatModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
+        ModModelRegistrations.registerCosmeticModel(event, ModItems.WITCH_HAT.get(), WitchHatModel.LAYER_LOCATION);
+        ModModelRegistrations.registerModelWithSwing(event, ModItems.FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, true, 20);
+        ModModelRegistrations.registerModelWithSwing(event, ModItems.SNOW_FOX_HAT.get(), FoxHatModel.LAYER_LOCATION, true, 20);
         ModModelRegistrations.registerDyeableCosmeticModel(event, ModItems.SCARF.get(), ScarfModel.LAYER_LOCATION, DyeColor.WHITE.getTextureDiffuseColor());
     }
 
@@ -81,8 +122,12 @@ public class ModClientEvents {
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ProfessionBody.LAYER_LOCATION, ProfessionBody::createBodyLayer);
         event.registerLayerDefinition(HoodModel.LAYER_LOCATION, HoodModel::createBodyLayer);
+        event.registerLayerDefinition(BodyModel.LAYER_LOCATION, BodyModel::createBodyLayer);
+        event.registerLayerDefinition(PantsModel.LAYER_LOCATION, PantsModel::createBodyLayer);
+        event.registerLayerDefinition(ShoesModel.LAYER_LOCATION, ShoesModel::createBodyLayer);
         event.registerLayerDefinition(HatModel.LAYER_LOCATION, HatModel::createBodyLayer);
-        event.registerLayerDefinition(TopHatModel.LAYER_LOCATION, TopHatModel::createBodyLayer);
+        event.registerLayerDefinition(TallHatModel.LAYER_LOCATION, TallHatModel::createBodyLayer);
+        event.registerLayerDefinition(WitchHatModel.LAYER_LOCATION, WitchHatModel::createBodyLayer);
         event.registerLayerDefinition(FoxHatModel.LAYER_LOCATION, FoxHatModel::createBodyLayer);
         event.registerLayerDefinition(ScarfModel.LAYER_LOCATION, ScarfModel::createBodyLayer);
     }

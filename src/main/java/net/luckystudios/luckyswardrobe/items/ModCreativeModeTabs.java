@@ -29,10 +29,40 @@ public class ModCreativeModeTabs {
 
                         // Clothing
                         output.accept(ModItems.TAIGA_HOOD);
+                        output.accept(ModItems.TAIGA_COAT);
+                        output.accept(ModItems.TAIGA_PANTS);
+                        output.accept(ModItems.TAIGA_BOOTS);
+
+                        output.accept(ModItems.SNOWY_HAT);
+                        output.accept(ModItems.SNOWY_HOOD);
+                        output.accept(ModItems.SNOWY_COAT);
+                        output.accept(ModItems.SNOWY_PANTS);
+                        output.accept(ModItems.SNOWY_BOOTS);
+
+                        output.accept(ModItems.SAVANNA_FLORAL_CROWN);
+                        output.accept(ModItems.SAVANNA_ROBE);
+                        output.accept(ModItems.SAVANNA_PANTS);
+                        output.accept(ModItems.SAVANNA_SANDALS);
+
+                        output.accept(ModItems.SWAMPY_HAT);
+                        output.accept(ModItems.SWAMPY_ROBE);
+                        output.accept(ModItems.SWAMPY_PANTS);
+                        output.accept(ModItems.SWAMPY_SHOES);
+
+                        output.accept(ModItems.JUNGLE_ROBE);
+                        output.accept(ModItems.JUNGLE_PANTS);
+                        output.accept(ModItems.JUNGLE_SANDALS);
+
+                        output.accept(ModItems.DESERT_HAT);
+                        output.accept(ModItems.DESERT_ROBE);
+                        output.accept(ModItems.DESERT_PANTS);
+                        output.accept(ModItems.DESERT_SANDALS);
 
                         // Unique Cosmetics
                         output.accept(ModItems.HAT);
                         output.accept(ModItems.TOP_HAT);
+                        output.accept(ModItems.EXPLORERS_HAT);
+                        output.accept(ModItems.WITCH_HAT);
                         output.accept(ModItems.FOX_HAT);
                         output.accept(ModItems.SNOW_FOX_HAT);
                         output.accept(ModItems.SCARF);

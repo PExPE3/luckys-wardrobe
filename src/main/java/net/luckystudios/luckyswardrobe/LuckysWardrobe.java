@@ -1,5 +1,6 @@
 package net.luckystudios.luckyswardrobe;
 
+import net.luckystudios.luckyswardrobe.components.ModDataComponents;
 import net.luckystudios.luckyswardrobe.items.ModCreativeModeTabs;
 import net.luckystudios.luckyswardrobe.items.ModItems;
 import net.luckystudios.luckyswardrobe.items.cosmetics.ModArmorMaterials;
@@ -42,7 +43,7 @@ public class LuckysWardrobe
         NeoForge.EVENT_BUS.register(this);
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
-
+        ModDataComponents.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
