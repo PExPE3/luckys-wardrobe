@@ -18,19 +18,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
         // Leather Apron
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LEATHER_APRON.get())
-                .pattern(" # ")
-                .pattern("###")
-                .define('#', Items.LEATHER)
-                .unlockedBy("has_leather", has(Items.LEATHER)).save(recipeOutput);
-
-        // Hardened Leather Apron
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDENED_LEATHER_APRON.get())
-                .pattern("@#@")
-                .pattern("###")
-                .define('#', Items.LEATHER)
-                .define('@', Items.IRON_INGOT)
-                .unlockedBy("has_gold", has(Items.IRON_INGOT)).save(recipeOutput);
+//        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LEATHER_APRON.get())
+//                .pattern(" # ")
+//                .pattern("###")
+//                .define('#', Items.LEATHER)
+//                .unlockedBy("has_leather", has(Items.LEATHER)).save(recipeOutput);
+//
+//        // Hardened Leather Apron
+//        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HARDENED_LEATHER_APRON.get())
+//                .pattern("@#@")
+//                .pattern("###")
+//                .define('#', Items.LEATHER)
+//                .define('@', Items.IRON_INGOT)
+//                .unlockedBy("has_gold", has(Items.IRON_INGOT)).save(recipeOutput);
 
         // Hat
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HAT.get())

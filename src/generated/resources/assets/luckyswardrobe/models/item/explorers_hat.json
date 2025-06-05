@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "luckyswardrobe:item/explorers_hat",
-    "layer1": "luckyswardrobe:item/explorers_hat_dye_overlay"
-  }
-}

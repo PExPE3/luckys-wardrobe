@@ -21,21 +21,21 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.DYEABLE)
-                .add(ModItems.TAIGA_HOOD.get())
-                .add(ModItems.TAIGA_COAT.get())
-                .add(ModItems.TAIGA_PANTS.get())
-                .add(ModItems.TAIGA_BOOTS.get())
-
-                .add(ModItems.SNOWY_HOOD.get())
-                .add(ModItems.SNOWY_HAT.get())
-                .add(ModItems.SNOWY_COAT.get())
-                .add(ModItems.SNOWY_PANTS.get())
-                .add(ModItems.SNOWY_BOOTS.get())
+//                .add(ModItems.TAIGA_HOOD.get())
+//                .add(ModItems.TAIGA_COAT.get())
+//                .add(ModItems.TAIGA_PANTS.get())
+//                .add(ModItems.TAIGA_BOOTS.get())
+//
+//                .add(ModItems.SNOWY_HOOD.get())
+//                .add(ModItems.SNOWY_HAT.get())
+//                .add(ModItems.SNOWY_COAT.get())
+//                .add(ModItems.SNOWY_PANTS.get())
+//                .add(ModItems.SNOWY_BOOTS.get())
 
                 .add(ModItems.HAT.get())
-                .add(ModItems.TOP_HAT.get())
-                .add(ModItems.EXPLORERS_HAT.get())
-                .add(ModItems.SCARF.get())
+//                .add(ModItems.TOP_HAT.get())
+//                .add(ModItems.EXPLORERS_HAT.get())
+//                .add(ModItems.SCARF.get())
         ;
     }
 }

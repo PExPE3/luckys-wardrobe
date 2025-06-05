@@ -13,8 +13,8 @@ import org.jetbrains.annotations.Nullable;
 
 public class DyeableHoodArmorItem extends CosmeticArmorItem {
 
-    public DyeableHoodArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties.stacksTo(1));
+    public DyeableHoodArmorItem(Properties properties) {
+        super(properties.stacksTo(1));
     }
 
     @Override

@@ -24,59 +24,8 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
 
-    public static final Holder<ArmorMaterial> COSMETIC = register("cosmetic",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                // Increased protection values by 1 and body by 3
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
-                attribute.put(ArmorItem.Type.HELMET, 0);
-                attribute.put(ArmorItem.Type.BODY, 0);
-            }),
-            SoundEvents.ARMOR_EQUIP_LEATHER,
-            9,
-            0.0f,
-            0.0f,
-            () -> Items.WHITE_WOOL
-    );
-
-    public static final Holder<ArmorMaterial> DYEABLE_COSMETIC = register("cosmetic",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                // Increased protection values by 1 and body by 3
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
-                attribute.put(ArmorItem.Type.HELMET, 0);
-                attribute.put(ArmorItem.Type.BODY, 0);
-            }),
-            SoundEvents.ARMOR_EQUIP_LEATHER,
-            9,
-            0.0f,
-            0.0f,
-            () -> Items.WHITE_WOOL,
-            List.of(
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "cosmetic"), "_overlay", true)
-            )
-    );
-
-    public static final Holder<ArmorMaterial> LEATHER_COSMETIC = register("leather_cosmetic",
-            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
-                // Increased protection values by 1 and body by 3
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
-                attribute.put(ArmorItem.Type.HELMET, 0);
-                attribute.put(ArmorItem.Type.BODY, 0);
-            }),
-            SoundEvents.ARMOR_EQUIP_LEATHER,
-            9,
-            0.0f,
-            0.0f,
-            () -> Items.LEATHER
-    );
-
     public static final Holder<ArmorMaterial> DYEABLE_LEATHER_COSMETIC = register("dyeable_leather_cosmetic",
-            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 // Increased protection values by 1 and body by 3
                 attribute.put(ArmorItem.Type.BOOTS, 0);
                 attribute.put(ArmorItem.Type.LEGGINGS, 0);
@@ -93,22 +42,6 @@ public class ModArmorMaterials {
                     new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "leather"), "", false),
                     new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "leather"), "_overlay", true)
             )
-    );
-
-    public static final Holder<ArmorMaterial> WOOL_CLOTHING = register("wool_clothing",
-            Util.make(new EnumMap<>(CosmeticArmorItem.Type.class), attribute -> {
-                // Increased protection values by 1 and body by 3
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
-                attribute.put(ArmorItem.Type.HELMET, 0);
-                attribute.put(ArmorItem.Type.BODY, 0);
-            }),
-            SoundEvents.ARMOR_EQUIP_LEATHER,
-            9,
-            0.0f,
-            0.0f,
-            () -> Items.WHITE_WOOL
     );
 
     public static final CauldronInteraction DYED_ARMOR_ITEM = (state, level, pos, player, hand, stack) -> {
@@ -137,8 +70,8 @@ public class ModArmorMaterials {
         Supplier<Ingredient> ingredient = () -> Ingredient.of(repairIngredient.get());
         List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
-        EnumMap<CosmeticArmorItem.Type, Integer> typeMap = new EnumMap<>(CosmeticArmorItem.Type.class);
-        for (CosmeticArmorItem.Type type : ArmorItem.Type.values()) {
+        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
+        for (ArmorItem.Type type : ArmorItem.Type.values()) {
             typeMap.put(type, typeProtection.get(type));
         }
 

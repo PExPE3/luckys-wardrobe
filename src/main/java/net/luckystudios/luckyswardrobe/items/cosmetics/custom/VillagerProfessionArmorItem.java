@@ -1,6 +1,5 @@
 package net.luckystudios.luckyswardrobe.items.cosmetics.custom;
 
-import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -13,8 +12,8 @@ public class VillagerProfessionArmorItem extends CosmeticArmorItem {
 
     private final ResourceLocation professionTexture;
 
-    public VillagerProfessionArmorItem(Holder<ArmorMaterial> material, Type type, ResourceLocation professionTexture, Properties properties) {
-        super(material, type, properties);
+    public VillagerProfessionArmorItem(ResourceLocation professionTexture, Properties properties) {
+        super(properties);
         this.professionTexture = professionTexture;
     }
 

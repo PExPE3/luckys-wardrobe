@@ -14,8 +14,8 @@ import org.jetbrains.annotations.Nullable;
 
 // This item is completely dyed, and doesn't have a layer that is separate from the dye
 public class DyeableOutfitArmorItem extends CosmeticArmorItem {
-    public DyeableOutfitArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public DyeableOutfitArmorItem(Properties properties) {
+        super(properties);
     }
 
     @Override
@@ -35,10 +35,5 @@ public class DyeableOutfitArmorItem extends CosmeticArmorItem {
             texturePath = COSMETIC_PATH + firstWord + "_outfit";
         }
         return layer.dyeable() ? ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, texturePath + "_dye_overlay.png") : ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, texturePath + ".png");
-    }
-
-    @Override
-    public boolean canWalkOnPowderedSnow(ItemStack stack, LivingEntity wearer) {
-        return stack.is(ModItems.TAIGA_BOOTS);
     }
 }

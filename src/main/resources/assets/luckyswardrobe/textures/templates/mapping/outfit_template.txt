@@ -1,0 +1,9 @@
+Red [Left] = Inner Body
+Red [Right] = Outer Body
+Orange [Left] = Inner Pants
+Orange [Right] = Outer Pants
+Yellow [Top] = Inner Arms
+Yellow [Bottom] = Outer Arms
+Green [Top] = Inner Pants Leg
+Green [Bottom] = Outer Pants Leg
+Blue = Shoes

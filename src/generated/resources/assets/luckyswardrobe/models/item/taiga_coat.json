@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "luckyswardrobe:item/taiga_coat",
-    "layer1": "luckyswardrobe:item/taiga_coat_dye_overlay"
-  }
-}

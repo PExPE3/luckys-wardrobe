@@ -1,5 +1,6 @@
 package net.luckystudios.luckyswardrobe.items.cosmetics.custom;
 
+import io.wispforest.accessories.api.AccessoryItem;
 import net.luckystudios.luckyswardrobe.LuckysWardrobe;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -11,22 +12,12 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
-public class DyeableCosmeticArmorItem extends ArmorItem {
+public class DyeableCosmeticArmorItem extends AccessoryItem {
 
     public String COSMETIC_PATH = "textures/entity/cosmetic/";
 
-    public DyeableCosmeticArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties.stacksTo(1));
-    }
-
-    @Override
-    public int getDefense() {
-        return 0;
-    }
-
-    @Override
-    public float getToughness() {
-        return 0;
+    public DyeableCosmeticArmorItem(Properties properties) {
+        super(properties.stacksTo(1));
     }
 
     @Override

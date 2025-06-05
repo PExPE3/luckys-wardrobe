@@ -8,12 +8,16 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 // This item is completely dyed, and doesn't have a layer that is separate from the dye
-public class OutfitArmorItem extends CosmeticArmorItem {
+public class OutfitArmorItem extends ArmorItem {
+
+    public String COSMETIC_PATH = "textures/entity/cosmetic/";
+
     public OutfitArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
     }
@@ -39,6 +43,7 @@ public class OutfitArmorItem extends CosmeticArmorItem {
 
     @Override
     public boolean canWalkOnPowderedSnow(ItemStack stack, LivingEntity wearer) {
-        return stack.is(ModItems.TAIGA_BOOTS);
+//        return stack.is(ModItems.TAIGA_BOOTS);
+        return false;
     }
 }
