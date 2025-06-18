@@ -1,25 +1,26 @@
 package net.luckystudios.luckyswardrobe.items.cosmetics.custom;
 
 import net.luckystudios.luckyswardrobe.LuckysWardrobe;
-import net.luckystudios.luckyswardrobe.items.ModItems;
-import net.minecraft.core.Holder;
+import net.luckystudios.luckyswardrobe.datagen.types.item_tags.ModItemTags;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 // This item is completely dyed, and doesn't have a layer that is separate from the dye
 public class OutfitArmorItem extends ArmorItem {
 
-    public String COSMETIC_PATH = "textures/entity/cosmetic/";
+    public String COSMETIC_PATH = "textures/entity/";
 
-    public OutfitArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
-        super(material, type, properties);
+    public OutfitArmorItem(Type type, Properties properties) {
+        super(ArmorMaterials.LEATHER, type, properties.stacksTo(1));
     }
 
     @Override
@@ -38,12 +39,16 @@ public class OutfitArmorItem extends ArmorItem {
         } else {
             texturePath = COSMETIC_PATH + firstWord + "_outfit";
         }
+
+        if (stack.is(ItemTags.DYEABLE) && layer.dyeable()) {
+            return ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, texturePath + "_dye_overlay.png");
+        }
+
         return ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, texturePath + ".png");
     }
 
     @Override
     public boolean canWalkOnPowderedSnow(ItemStack stack, LivingEntity wearer) {
-//        return stack.is(ModItems.TAIGA_BOOTS);
-        return false;
+        return stack.is(ModItemTags.SNOW_WALKERS);
     }
 }

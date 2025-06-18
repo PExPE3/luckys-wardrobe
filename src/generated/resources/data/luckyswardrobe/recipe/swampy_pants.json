@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "$": {
+      "item": "minecraft:mangrove_leaves"
+    },
+    "%": {
+      "item": "minecraft:iron_nugget"
+    },
+    "@": {
+      "item": "minecraft:black_wool"
+    }
+  },
+  "pattern": [
+    "#%#",
+    "$ $",
+    "@ @"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luckyswardrobe:swampy_pants"
+  }
+}

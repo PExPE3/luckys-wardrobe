@@ -18,14 +18,23 @@ public class ModAdvancmentProvider implements AdvancementProvider.AdvancementGen
     public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> consumer, ExistingFileHelper existingFileHelper) {
         AdvancementHolder selfExpression = Advancement.Builder.advancement()
                 .display(ModItems.HAT,
-                        Component.translatable("advancement.luckysarmory.heavy_iron_armor.title"),
-                        Component.translatable("advancement.luckysarmory.heavy_iron_armor.description"),
+                        Component.translatable("advancement.luckysarmory.selfExpression.title"),
+                        Component.translatable("advancement.luckysarmory.selfExpression.description"),
                         ResourceLocation.withDefaultNamespace("textures/gui/advancements/backgrounds/stone.png"),
                         AdvancementType.TASK, true, true, false)
                 .addCriterion(
                         "hat",
                         InventoryChangeTrigger.TriggerInstance.hasItems(
-                                ModItems.HAT
+                                ModItems.HAT,
+                                ModItems.TOP_HAT,
+                                ModItems.EXPLORERS_HAT,
+                                ModItems.FARMER_HAT,
+                                ModItems.BLACKSMITH_MASK,
+                                ModItems.WITCH_HAT,
+                                ModItems.FOX_HAT,
+                                ModItems.SNOW_FOX_HAT,
+                                ModItems.CHEF_HAT,
+                                ModItems.SCARF
                         )
                 )
                 .requirements(AdvancementRequirements.Strategy.OR)

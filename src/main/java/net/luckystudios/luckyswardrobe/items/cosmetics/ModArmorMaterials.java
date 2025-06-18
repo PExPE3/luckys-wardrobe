@@ -1,7 +1,6 @@
 package net.luckystudios.luckyswardrobe.items.cosmetics;
 
 import net.luckystudios.luckyswardrobe.LuckysWardrobe;
-import net.luckystudios.luckyswardrobe.items.cosmetics.custom.CosmeticArmorItem;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
@@ -24,14 +23,9 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
 
-    public static final Holder<ArmorMaterial> DYEABLE_LEATHER_COSMETIC = register("dyeable_leather_cosmetic",
+    public static final Holder<ArmorMaterial> COSMETIC = register("cosmetic",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 // Increased protection values by 1 and body by 3
-                attribute.put(ArmorItem.Type.BOOTS, 0);
-                attribute.put(ArmorItem.Type.LEGGINGS, 0);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
-                attribute.put(ArmorItem.Type.HELMET, 0);
-                attribute.put(ArmorItem.Type.BODY, 0);
             }),
             SoundEvents.ARMOR_EQUIP_LEATHER,
             9,
@@ -43,6 +37,26 @@ public class ModArmorMaterials {
                     new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "leather"), "_overlay", true)
             )
     );
+
+//    public static final Holder<ArmorMaterial> DYEABLE_LEATHER_COSMETIC = register("dyeable_leather_cosmetic",
+//            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+//                // Increased protection values by 1 and body by 3
+////                attribute.put(ArmorItem.Type.BOOTS, 0);
+////                attribute.put(ArmorItem.Type.LEGGINGS, 0);
+////                attribute.put(ArmorItem.Type.CHESTPLATE, 0);
+////                attribute.put(ArmorItem.Type.HELMET, 0);
+////                attribute.put(ArmorItem.Type.BODY, 0);
+//            }),
+//            SoundEvents.ARMOR_EQUIP_LEATHER,
+//            9,
+//            0.0f,
+//            0.0f,
+//            () -> Items.LEATHER,
+//            List.of(
+//                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "leather"), "", false),
+//                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(LuckysWardrobe.MOD_ID, "leather"), "_overlay", true)
+//            )
+//    );
 
     public static final CauldronInteraction DYED_ARMOR_ITEM = (state, level, pos, player, hand, stack) -> {
         ItemStack result = stack.copy();

@@ -5,6 +5,33 @@
         "items": [
           {
             "items": "luckyswardrobe:hat"
+          },
+          {
+            "items": "luckyswardrobe:top_hat"
+          },
+          {
+            "items": "luckyswardrobe:explorers_hat"
+          },
+          {
+            "items": "luckyswardrobe:farmer_hat"
+          },
+          {
+            "items": "luckyswardrobe:blacksmith_mask"
+          },
+          {
+            "items": "luckyswardrobe:witch_hat"
+          },
+          {
+            "items": "luckyswardrobe:fox_hat"
+          },
+          {
+            "items": "luckyswardrobe:snow_fox_hat"
+          },
+          {
+            "items": "luckyswardrobe:chef_hat"
+          },
+          {
+            "items": "luckyswardrobe:scarf"
           }
         ]
       },
@@ -14,14 +41,14 @@
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "advancement.luckysarmory.heavy_iron_armor.description"
+      "translate": "advancement.luckysarmory.selfExpression.description"
     },
     "icon": {
       "count": 1,
       "id": "luckyswardrobe:hat"
     },
     "title": {
-      "translate": "advancement.luckysarmory.heavy_iron_armor.title"
+      "translate": "advancement.luckysarmory.selfExpression.title"
     }
   },
   "requirements": [

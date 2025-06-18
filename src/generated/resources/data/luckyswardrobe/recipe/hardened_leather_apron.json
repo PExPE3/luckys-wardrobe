@@ -5,13 +5,16 @@
     "#": {
       "item": "minecraft:leather"
     },
+    "%": {
+      "item": "minecraft:lead"
+    },
     "@": {
       "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
     "@#@",
-    "###"
+    "%#%"
   ],
   "result": {
     "count": 1,

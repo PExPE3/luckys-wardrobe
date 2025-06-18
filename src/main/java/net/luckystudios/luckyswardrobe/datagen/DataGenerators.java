@@ -2,6 +2,8 @@ package net.luckystudios.luckyswardrobe.datagen;
 
 import net.luckystudios.luckyswardrobe.LuckysWardrobe;
 import net.luckystudios.luckyswardrobe.datagen.types.*;
+import net.luckystudios.luckyswardrobe.datagen.types.entity_tags.ModEntityTypeTagsProvider;
+import net.luckystudios.luckyswardrobe.datagen.types.item_tags.ModItemTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -27,6 +29,7 @@ public class DataGenerators {
         BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModEntityTypeTagsProvider(packOutput, lookupProvider, LuckysWardrobe.MOD_ID, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new ModDataMapProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));

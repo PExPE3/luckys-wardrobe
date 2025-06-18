@@ -1,11 +1,11 @@
 package net.luckystudios.luckyswardrobe;
 
-import io.wispforest.accessories.api.client.AccessoriesRendererRegistry;
 import net.luckystudios.luckyswardrobe.components.ModDataComponents;
 import net.luckystudios.luckyswardrobe.items.ModCreativeModeTabs;
 import net.luckystudios.luckyswardrobe.items.ModItems;
 import net.luckystudios.luckyswardrobe.items.cosmetics.ModArmorMaterials;
 import net.minecraft.core.cauldron.CauldronInteraction;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,7 +34,7 @@ public class LuckysWardrobe
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModDataComponents.register(modEventBus);
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, LuckysWardrobeConfig.COMMON_CONFIG);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -42,6 +42,19 @@ public class LuckysWardrobe
         event.enqueueWork(() -> {
             // Register the cauldron interaction for dyeing armor items
             CauldronInteraction.WATER.map().put(ModItems.HAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.TOP_HAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.EXPLORERS_HAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SCARF.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+
+            CauldronInteraction.WATER.map().put(ModItems.TAIGA_HOOD.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.TAIGA_COAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.TAIGA_PANTS.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.TAIGA_BOOTS.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SNOWY_HOOD.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SNOWY_HAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SNOWY_COAT.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SNOWY_PANTS.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
+            CauldronInteraction.WATER.map().put(ModItems.SNOWY_BOOTS.get(), ModArmorMaterials.DYED_ARMOR_ITEM);
         });
     }
 
@@ -51,5 +64,9 @@ public class LuckysWardrobe
     {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    public static ResourceLocation id (String name) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
     }
 }

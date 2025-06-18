@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "@": {
+      "item": "minecraft:acacia_leaves"
+    }
+  },
+  "pattern": [
+    "@@@"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luckyswardrobe:savanna_floral_crown"
+  }
+}

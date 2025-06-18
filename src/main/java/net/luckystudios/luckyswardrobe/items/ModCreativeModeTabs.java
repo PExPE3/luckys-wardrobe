@@ -17,55 +17,71 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HAT.get()))
                     .title(Component.translatable("itemGroup.luckyswardrobe"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        // Villager Profession Cosmetics
-//                        output.accept(ModItems.LEATHER_APRON);
-//                        output.accept(ModItems.HARDENED_LEATHER_APRON);
-//                        output.accept(ModItems.BUTCHERS_APRON);
-//                        output.accept(ModItems.CLERICS_APRON);
-//                        output.accept(ModItems.FISHING_APRON);
-//                        output.accept(ModItems.CHITON);
-//                        output.accept(ModItems.MASONS_APRON);
-//                        output.accept(ModItems.WOOL_VEST);
-//
-//                        // Clothing
-//                        output.accept(ModItems.TAIGA_HOOD);
-//                        output.accept(ModItems.TAIGA_COAT);
-//                        output.accept(ModItems.TAIGA_PANTS);
-//                        output.accept(ModItems.TAIGA_BOOTS);
-//
-//                        output.accept(ModItems.SNOWY_HAT);
-//                        output.accept(ModItems.SNOWY_HOOD);
-//                        output.accept(ModItems.SNOWY_COAT);
-//                        output.accept(ModItems.SNOWY_PANTS);
-//                        output.accept(ModItems.SNOWY_BOOTS);
-//
-//                        output.accept(ModItems.SAVANNA_FLORAL_CROWN);
-//                        output.accept(ModItems.SAVANNA_ROBE);
-//                        output.accept(ModItems.SAVANNA_PANTS);
-//                        output.accept(ModItems.SAVANNA_SANDALS);
-//
-//                        output.accept(ModItems.SWAMPY_HAT);
-//                        output.accept(ModItems.SWAMPY_ROBE);
-//                        output.accept(ModItems.SWAMPY_PANTS);
-//                        output.accept(ModItems.SWAMPY_SHOES);
-//
-//                        output.accept(ModItems.JUNGLE_ROBE);
-//                        output.accept(ModItems.JUNGLE_PANTS);
-//                        output.accept(ModItems.JUNGLE_SANDALS);
-//
-//                        output.accept(ModItems.DESERT_HAT);
-//                        output.accept(ModItems.DESERT_ROBE);
-//                        output.accept(ModItems.DESERT_PANTS);
-//                        output.accept(ModItems.DESERT_SANDALS);
 
-                        // Unique Cosmetics
+                        // Hats!
                         output.accept(ModItems.HAT);
-//                        output.accept(ModItems.TOP_HAT);
-//                        output.accept(ModItems.EXPLORERS_HAT);
-//                        output.accept(ModItems.WITCH_HAT);
-//                        output.accept(ModItems.FOX_HAT);
-//                        output.accept(ModItems.SNOW_FOX_HAT);
-//                        output.accept(ModItems.SCARF);
+                        output.accept(ModItems.TOP_HAT);
+                        output.accept(ModItems.EXPLORERS_HAT);
+                        output.accept(ModItems.FARMER_HAT);
+                        output.accept(ModItems.BLACKSMITH_MASK);
+                        output.accept(ModItems.CHEF_HAT);
+                        output.accept(ModItems.WITCH_HAT);
+                        output.accept(ModItems.FOX_HAT);
+                        output.accept(ModItems.SNOW_FOX_HAT);
+                        output.accept(ModItems.WOLF_HAT);
+                        output.accept(ModItems.PANDA_HAT);
+                        output.accept(ModItems.BEE_HAT);
+                        output.accept(ModItems.SCARF);
+
+                        // Villager Profession Cosmetics
+                        output.accept(ModItems.LEATHER_APRON);
+                        output.accept(ModItems.HARDENED_LEATHER_APRON);
+                        output.accept(ModItems.BUTCHERS_APRON);
+                        output.accept(ModItems.CLERICS_APRON);
+                        output.accept(ModItems.FISHING_APRON);
+                        output.accept(ModItems.CHITON);
+                        output.accept(ModItems.MASONS_APRON);
+                        output.accept(ModItems.WOOL_VEST);
+
+                        // Clothing
+                        output.accept(ModItems.TAIGA_HOOD);
+                        output.accept(ModItems.TAIGA_COAT);
+                        output.accept(ModItems.TAIGA_PANTS);
+                        output.accept(ModItems.TAIGA_BOOTS);
+
+                        output.accept(ModItems.SNOWY_HAT);
+                        output.accept(ModItems.SNOWY_HOOD);
+                        output.accept(ModItems.SNOWY_COAT);
+                        output.accept(ModItems.SNOWY_PANTS);
+                        output.accept(ModItems.SNOWY_BOOTS);
+
+                        output.accept(ModItems.SAVANNA_FLORAL_CROWN);
+                        output.accept(ModItems.SAVANNA_ROBE);
+                        output.accept(ModItems.SAVANNA_PANTS);
+                        output.accept(ModItems.SAVANNA_SANDALS);
+
+                        output.accept(ModItems.SWAMPY_HAT);
+                        output.accept(ModItems.SWAMPY_ROBE);
+                        output.accept(ModItems.SWAMPY_PANTS);
+                        output.accept(ModItems.SWAMPY_SHOES);
+
+                        output.accept(ModItems.JUNGLE_ROBE);
+                        output.accept(ModItems.JUNGLE_PANTS);
+                        output.accept(ModItems.JUNGLE_SANDALS);
+
+                        output.accept(ModItems.DESERT_HAT);
+                        output.accept(ModItems.DESERT_ROBE);
+                        output.accept(ModItems.DESERT_PANTS);
+                        output.accept(ModItems.DESERT_SANDALS);
+
+                        output.accept(ModItems.ENTERTAINERS_HAT);
+                        output.accept(ModItems.ENTERTAINERS_SHIRT);
+                        output.accept(ModItems.ENTERTAINERS_PANTS);
+                        output.accept(ModItems.ENTERTAINERS_SHOES);
+
+                        // Miscellaneous
+                        output.accept(ModItems.BROKEN_BARREL);
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
