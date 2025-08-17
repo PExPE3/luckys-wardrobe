@@ -1,0 +1,66 @@
+{
+  "itemGroup.luckyswardrobe": "Wardrobe",
+
+  "item.luckyswardrobe.hat": "帽子",
+  "item.luckyswardrobe.top_hat": "シルクハット",
+  "item.luckyswardrobe.explorers_hat": "探検家の帽子",
+  "item.luckyswardrobe.farmer_hat": "農家の麦わら帽",
+  "item.luckyswardrobe.blacksmith_mask": "鍛冶屋の帽子",
+  "item.luckyswardrobe.chef_hat": "シェフハット",
+  "item.luckyswardrobe.witch_hat": "ウィッチの帽子",
+  "item.luckyswardrobe.fox_hat": "キツネの帽子",
+  "item.luckyswardrobe.snow_fox_hat": "雪キツネの帽子",
+  "item.luckyswardrobe.wolf_hat": "オオカミの帽子",
+  "item.luckyswardrobe.panda_hat": "パンダの帽子",
+  "item.luckyswardrobe.bee_hat": "ミツバチの帽子",
+  "item.luckyswardrobe.scarf": "スカーフ",
+
+  "item.luckyswardrobe.leather_apron": "革のエプロン",
+  "item.luckyswardrobe.hardened_leather_apron": "ハードレザーのエプロン",
+  "item.luckyswardrobe.butchers_apron": "肉屋のエプロン",
+  "item.luckyswardrobe.clerics_apron": "聖職者のエプロン",
+  "item.luckyswardrobe.fishing_apron": "釣り用のエプロン",
+  "item.luckyswardrobe.chiton": "キトン",
+  "item.luckyswardrobe.masons_apron": "石工のエプロン",
+  "item.luckyswardrobe.wool_vest": "羊毛のベスト",
+
+  "item.luckyswardrobe.taiga_hood": "タイガのフード",
+  "item.luckyswardrobe.taiga_coat": "タイガのコート",
+  "item.luckyswardrobe.taiga_pants": "タイガのパンツ",
+  "item.luckyswardrobe.taiga_boots": "タイガのブーツ",
+
+  "item.luckyswardrobe.snowy_hat": "雪被りの帽子",
+  "item.luckyswardrobe.snowy_hood": "雪被りのフード",
+  "item.luckyswardrobe.snowy_coat": "雪被りのコート",
+  "item.luckyswardrobe.snowy_pants": "雪被りのパンツ",
+  "item.luckyswardrobe.snowy_boots": "雪被りのブーツ",
+
+  "item.luckyswardrobe.savanna_floral_crown": "サバンナの花冠",
+  "item.luckyswardrobe.savanna_robe": "サバンナのローブ",
+  "item.luckyswardrobe.savanna_pants": "サバンナのパンツ",
+  "item.luckyswardrobe.savanna_sandals": "サバンナのサンダル",
+
+  "item.luckyswardrobe.swampy_hat": "沼地の帽子",
+  "item.luckyswardrobe.swampy_robe": "沼地のローブ",
+  "item.luckyswardrobe.swampy_pants": "沼地のパンツ",
+  "item.luckyswardrobe.swampy_shoes": "沼地の靴",
+
+  "item.luckyswardrobe.jungle_robe": "ジャングルのローブ",
+  "item.luckyswardrobe.jungle_pants": "ジャングルのパンツ",
+  "item.luckyswardrobe.jungle_sandals": "ジャングルのサンダル",
+
+  "item.luckyswardrobe.desert_hat": "砂漠の帽子",
+  "item.luckyswardrobe.desert_robe": "砂漠のローブ",
+  "item.luckyswardrobe.desert_pants": "砂漠のパンツ",
+  "item.luckyswardrobe.desert_sandals": "砂漠のサンダル",
+
+  "item.luckyswardrobe.entertainers_hat": "エンターテイナーの帽子",
+  "item.luckyswardrobe.entertainers_shirt": "エンターテイナーのシャツ",
+  "item.luckyswardrobe.entertainers_pants": "エンターテイナーのパンツ",
+  "item.luckyswardrobe.entertainers_shoes": "エンターテイナーの靴",
+
+  "item.luckyswardrobe.broken_barrel": "壊れた樽",
+
+  "advancement.luckysarmory.selfExpression.title": "自己表現",
+  "advancement.luckysarmory.selfExpression.description": "Lucky's Wardrobeの服であなただけのスタイルを披露する"
+}
